@@ -1270,6 +1270,5 @@ angular.module('listings').factory('Listings', function() {
             "address": "Gainesville, FL 32608, United States"
         }]
     };
-
     return listings.entries;
 });
