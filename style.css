@@ -6,3 +6,558 @@
   max-height: 400px;
   overflow: auto;
 }
+
+/* ---------------------------
+UF Branding Fonts
+----------------------------*/
+@font-face {
+  font-family: 'quadon';
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_quadon_medium-webfont.eot');
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_quadon_medium-webfont.eot?#iefix') format("embedded-opentype"), url('/media/templates/uf2015/fonts/rene_bieder_-_quadon_medium-webfont.woff') format("woff"), url('/media/templates/uf2015/fonts/rene_bieder_-_quadon_medium-webfont.ttf') format("truetype"), url('/media/templates/uf2015/fonts/rene_bieder_-_quadon_medium-webfont.svg#quadon') format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'gentona';
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_bold-webfont.eot');
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_bold-webfont.eot?#iefix') format("embedded-opentype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_bold-webfont.woff') format("woff"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_bold-webfont.ttf') format("truetype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_bold-webfont.svg') format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'gentona';
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_medium-webfont.eot');
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_medium-webfont.eot?#iefix') format("embedded-opentype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_medium-webfont.woff') format("woff"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_medium-webfont.ttf') format("truetype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_medium-webfont.svg#gentona') format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'gentona';
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light-webfont.eot');
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light-webfont.eot?#iefix') format("embedded-opentype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light-webfont.woff') format("woff"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light-webfont.ttf') format("truetype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light-webfont.svg#gentona') format("svg");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'gentona';
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light_italic-webfont.eot');
+  src: url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light_italic-webfont.eot?#iefix') format("embedded-opentype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light_italic-webfont.woff') format("woff"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light_italic-webfont.ttf') format("truetype"), url('/media/templates/uf2015/fonts/rene_bieder_-_gentona_light_italic-webfont.svg') format("svg");
+  font-weight: 100;
+  font-style: italic; }
+body {
+  background: #faf8f1 url('/media/templates/uf2015/img/bg-texture.png');
+  color: #333132;
+  font-family: "gentona", "Georgia", serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 26px;
+  margin: 0;
+  padding-top:0px; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px; } }
+  @media (min-width: 992px) {
+    body {
+      padding-top: 245px; } }
+  body.home {
+    padding-top: 60px; }
+    @media (min-width: 992px) {
+      body.home {
+        padding-top: 150px; } }
+
+.bg-texture {
+  background-image: url('/media/templates/uf2015/img/bg-texture.png'); }
+
+.open-menu, .open-menu body {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: 100%; }
+
+a {
+  color: #c24700;
+  text-decoration: none; }
+  a:hover {
+    color: #c24700; }
+  p a {
+    text-decoration:underline; }
+  .link a {
+    text-decoration:underline; }
+    
+a[id^='d.'] {
+  display: inline-block;
+  margin-top: -60px;
+  padding-top: 60px;
+  position: relative; }
+  @media (min-width: 768px) {
+    a[id^='d.'] {
+      margin-top: -150px;
+      padding-top: 150px; } }
+
+abbr {
+  border-bottom: 1px dashed #333132;
+  text-decoration: none; }
+
+strong {
+  font-weight: 500; }
+
+em {
+  font-style: italic; }
+
+cite {
+  font-style: normal; }
+
+h1, h2, h3, .kicker, .featured-story h2, h4, h5, dt, .faqs dt, h6 {
+  margin: 0 0 13px;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 26px;
+  color: inherit;
+  text-rendering: optimizelegibility; }
+
+h1,
+h2,
+h3,
+.kicker,
+.featured-story h2 {
+  line-height: 52px; }
+
+h1 {
+  color: #00529b;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 60px;
+      line-height: 72px;
+      margin-bottom: 50px; } }
+
+h2 {
+  color: #4c87b5;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 32px;
+      line-height: 36px; } }
+
+h3, .kicker, .featured-story h2 {
+  color: #005496;
+  font: 500 24px/36px "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 40px; }
+
+h4 {
+  color: #4c87b5;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase; }
+
+h5, dt, .faqs dt {
+  color: #00529b;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 36px;
+  text-transform: uppercase; }
+
+hr {
+  border: none;
+  border-bottom: 1px solid #e5dfcf;
+  margin: 30px 0; }
+  @media (min-width: 768px) {
+    hr {
+      margin: 60px 0; } }
+  hr.m-bottom {
+    margin-top: 0; }
+
+blockquote {
+  color: #4c87b5;
+  font: 500 20px/32px "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 20px 30px; }
+
+p, ul, ol, dl {
+  margin: 0 0 20px; }
+
+ul, ol {
+  margin-left: 30px; }
+  ul li, ol li {
+    margin-bottom: 10px; }
+    ul li:before, ol li:before {
+      content: "\2022 ";
+      color: #f37021;
+      font-weight: bold;
+      margin-right: 5px; }
+
+ol > li {
+  counter-increment: step-counter; }
+ol > li:before {
+  content: counter(step-counter);
+  font-size: 14px;
+  margin-right: 10px;
+  top: -2px;
+  position: relative; }
+
+.faqs dt {
+  border-top: 1px solid #e5dfcf;
+  padding-top: 10px;
+  line-height: 26px; }
+.faqs .toplink {
+  border-top: 1px solid #e5dfcf;
+  padding-top: 10px;
+  margin-bottom: 40px; }
+
+dd {
+  margin-bottom: 20px; }
+
+small {
+  font-size: 80%;
+  color: #888; }
+
+pre, code {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 20px; }
+
+code {
+  background: rgba(234, 229, 215, 0.75);
+  padding: 0.2rem 0.1rem; }
+
+pre {
+  background: url('/media/templates/uf2015/img/pre_bg.png') 0px 2px;
+  border: 1px solid #084b81;
+  border-left-width: 6px;
+  margin-bottom: 20px;
+  padding: 2px 10px;
+  position: relative;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap !important;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word; }
+  pre code {
+    background-color: transparent; }
+
+img {
+  display: block; }
+  img.m-bottom {
+    margin-bottom: 20px; }
+
+.img-full {
+  height: auto;
+  margin-bottom: 20px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .img-full {
+      margin: 0; } }
+
+.icon-svg {
+  display: inline-block; }
+  .icon-svg svg {
+    display: block;
+    height: 100%;
+    width: 100%; }
+
+.flt-right {
+  float: right; }
+
+.content-wrap {
+  margin-bottom: 100px; }
+
+@media (min-width: 992px) {
+  .resp-break {
+    display: block; } }
+
+.btn {
+  border: 3px solid #f37021;
+  color: #f7670d;
+  cursor: pointer;
+  display: inline-block;
+  font: 700 16px/1 "gentona", "Georgia", serif;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  text-decoration:none;
+  text-transform: uppercase; }
+  .btn:hover {
+    background: #f37021;
+    color: #fff; }
+  .btn.btn--white {
+    border-color: #fff;
+    color: #fff; }
+    .btn.btn--white:hover {
+      background: #fff;
+      color: #f37021; }
+  .btn .arw-right {
+    height: 14px;
+    margin-left: 15px;
+    position: relative;
+    top: 1px;
+    width: 18px; }
+
+.btn-circle {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 46px;
+  position: relative;
+  width: 46px; }
+
+.icon-circle {
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 15px; }
+  .icon-circle .icon-svg {
+    display: block; }
+
+.btn-mobile-toggle a {
+  background: #BC581A;
+  color: #fff!important;
+  display: block;
+  font: 500 18px/26px "gentona", "Georgia", serif;
+  padding: 18px 62px 18px 20px;
+  position: relative;
+  text-transform: uppercase; }
+  .btn-mobile-toggle a .arw-right {
+    background: #bc581a;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 62px; }
+  .btn-mobile-toggle a span > svg {
+    height: 14px;
+    width: 18px; }
+
+.btn-mobile-toggle {
+  display: block; }
+  @media (min-width: 768px) {
+    .btn-mobile-toggle {
+      display: none; } }
+  .btn-mobile-toggle .arw-right > svg {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+    -webkit-transition: -webkit-transform .25s ease-out;
+            transition: transform .25s ease-out; }
+
+.open-list .btn-mobile-toggle .arw-right > svg {
+  -webkit-transform: translate(-50%, -50%) rotate(270deg);
+          transform: translate(-50%, -50%) rotate(270deg); }
+
+.big-list-wrap {
+  margin-bottom: 30px; }
+  .big-list-wrap .big-list, .big-list-wrap .sidenav {
+    margin: 0; }
+
+.big-list, .sidenav {
+  margin-left: 0; }
+  .open-list .big-list li, .open-list .sidenav li, .big-list.open-list li, .open-list.sidenav li, .big-list.show-mobile li, .show-mobile.sidenav li {
+    display: block; }
+  @media (max-width: 992px) {
+    .big-list.show-mobile, .show-mobile.sidenav {
+      margin: 0; } }
+  .big-list li, .sidenav li {
+    display: none;
+    margin: 0;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .big-list li, .sidenav li {
+        display: block; } }
+    .big-list li:before, .sidenav li:before {
+      display: none; }
+    .big-list li.btn-mobile-toggle, .sidenav li.btn-mobile-toggle {
+      display: block; }
+      @media (min-width: 768px) {
+        .big-list li.btn-mobile-toggle, .sidenav li.btn-mobile-toggle {
+          display: none; } }
+  .big-list a, .sidenav a {
+    color: #b74a06;
+    display: block;
+    font: 500 18px/26px "gentona", "Georgia", serif;
+    letter-spacing: 2px;
+    padding: 18px 62px 18px 20px;
+    position: relative; }
+    @media (min-width: 768px) {
+      .big-list a, .sidenav a {
+        padding-left: 34px; } }
+  .no-touch .big-list a:hover, .no-touch .sidenav a:hover {
+    background: #c65006;
+    color: #fff; }
+    .no-touch .big-list a:hover .arw-right, .no-touch .sidenav a:hover .arw-right {
+      display: block; }
+  .big-list .arw-right, .sidenav .arw-right {
+    background: #dd661e;
+    color: #fff;
+    display: none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 62px; }
+    .big-list .arw-right > svg, .sidenav .arw-right > svg {
+      height: 14px;
+      width: 18px; }
+  .big-list .btn-mobile-toggle a > svg, .sidenav .btn-mobile-toggle a > svg {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg); }
+
+.read-more {
+  color: #f37021;
+  display: inline-block;
+  font: 500 16px/16px "gentona", "Georgia", serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; 
+  text-decoration:none; }
+
+@media (min-width: 768px) {
+  .aux-menu-wrap .audience-nav-wrap .arw-right > svg, .fixed .emergency-modal, .search-form button .icon-svg, .stat-wrap .stat-block, .center-vert {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+.no-csstransforms .aux-menu-wrap .audience-nav-wrap .arw-right > svg, .aux-menu-wrap .audience-nav-wrap .no-csstransforms .arw-right > svg, .no-csstransforms .fixed .emergency-modal, .fixed .no-csstransforms .emergency-modal, .no-csstransforms .search-form button .icon-svg, .search-form button .no-csstransforms .icon-svg, .no-csstransforms .stat-wrap .stat-block, .stat-wrap .no-csstransforms .stat-block, .no-csstransforms .center-vert {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+@media (min-width: 992px) {
+  .center-vert-large {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+.no-csstransforms .center-vert-large {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.btn-circle > svg, .btn-mobile-toggle a span > svg, .big-list .arw-right > svg, .sidenav .arw-right > svg, .styled-select .arw-right > svg, :root .uf-check input[type="checkbox"] + div .icon-svg, :root .uf-check input[type="radio"] + div:after, .header .logo img, .btn-search .icon-svg, .btn-menu .icon-svg, .btn-show-aux .icon-svg, .emergency-modal .icon-alert > svg, .alert-small .icon-alert > svg, .emergency-modal-close .icon-svg, .stat-wrap .stat h2, .stat-wrap .info-copy, .stat-block, .center-vert-all {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .no-csstransforms .btn-circle > svg, .no-csstransforms .btn-mobile-toggle a span > svg, .btn-mobile-toggle a .no-csstransforms span > svg, .no-csstransforms .big-list .arw-right > svg, .big-list .no-csstransforms .arw-right > svg, .no-csstransforms .sidenav .arw-right > svg, .sidenav .no-csstransforms .arw-right > svg, .no-csstransforms .styled-select .arw-right > svg, .styled-select .no-csstransforms .arw-right > svg, :root .no-csstransforms .uf-check input[type="checkbox"] + div .icon-svg, .uf-check input[type="checkbox"] + div :root .no-csstransforms .icon-svg, :root .no-csstransforms .uf-check input[type="radio"] + div:after, .uf-check :root .no-csstransforms input[type="radio"] + div:after, .no-csstransforms .header .logo img, .header .logo .no-csstransforms img, .no-csstransforms .btn-search .icon-svg, .btn-search .no-csstransforms .icon-svg, .no-csstransforms .btn-menu .icon-svg, .btn-menu .no-csstransforms .icon-svg, .no-csstransforms .btn-show-aux .icon-svg, .btn-show-aux .no-csstransforms .icon-svg, .no-csstransforms .emergency-modal .icon-alert > svg, .emergency-modal .no-csstransforms .icon-alert > svg, .no-csstransforms .alert-small .icon-alert > svg, .alert-small .no-csstransforms .icon-alert > svg, .no-csstransforms .emergency-modal-close .icon-svg, .emergency-modal-close .no-csstransforms .icon-svg, .no-csstransforms .stat-wrap .stat h2, .stat-wrap .stat .no-csstransforms h2, .no-csstransforms .stat-wrap .info-copy, .stat-wrap .no-csstransforms .info-copy, .no-csstransforms .stat-block, .no-csstransforms .center-vert-all {
+    position: relative;
+    top: 0;
+    left: 0; }
+
+.gradient-bg:after {
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 60%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+.gradient-bg * {
+  z-index: 2; }
+
+.visible-mobile {
+  display: block; }
+  @media (min-width: 768px) {
+    .visible-mobile {
+      display: none; } }
+
+.hidden-mobile {
+  display: none; }
+  @media (min-width: 768px) {
+    .hidden-mobile {
+      display: inline; } }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .visuallyhidden.focusable:focus {
+    border: 0;
+    clip: none;
+    height: auto;
+    margin: -1px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: auto; }
+
+.temp-img {
+  background: url(../img/_temp-landing-a-1.jpg) no-repeat center center;
+  background-size: cover; }
+
+.kicker {
+  color: #4c87b5;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .kicker {
+      font: 500 24px/36px "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-bottom: 50px; } }
+
+#skip-link {
+  background: #f7670d;
+  color: #fff;
+  display: block;
+  padding: 10px 0;
+  text-align: center; }
+
+form .row {
+  margin-bottom: 30px; }
+form input[type='text'], form textarea {
+  background: #fff;
+  border: 2px solid transparent;
+  color: #f37021;
+  display: inline-block;
+  font: 500 20px/1 "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  margin: 0 -2px;
+  padding: 17px 20px 16px;
+  vertical-align: top;
+  width: 100%; }
+  form input[type='text']:focus, form textarea:focus {
+    border-color: #f37021;
+    outline: none; }
+    form input[type='text']:focus::-webkit-input-placeholder, form textarea:focus::-webkit-input-placeholder {
+      color: #f37021;
+      line-height: 1.2; }
+    form input[type='text']:focus::-moz-placeholder, form textarea:focus::-moz-placeholder {
+      color: #f37021;
+      line-height: 1.2; }
+    form input[type='text']:focus:-ms-input-placeholder, form textarea:focus:-ms-input-placeholder {
+      color: #f37021;
+      line-height: 1.2; }
+    form input[type='text']:focus::placeholder, form textarea:focus::placeholder {
+      color: #f37021;
+      line-height: 1.2; }
+  form input[type='text']::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+    color: rgba(51, 49, 50, 0.6);
+    line-height: 1.2; }
+  form input[type='text']::-moz-placeholder, form textarea::-moz-placeholder {
+    color: rgba(51, 49, 50, 0.6);
+    line-height: 1.2; }
+  form input[type='text']:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+    color: rgba(51, 49, 50, 0.6);
+    line-height: 1.2; }
+  form input[type='text']::placeholder, form textarea::placeholder {
+    color: rgba(51, 49, 50, 0.6);
+    line-height: 1.2; }
+form textarea {
+  min-height: 200px; }
